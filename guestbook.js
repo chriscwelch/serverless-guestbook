@@ -14,6 +14,7 @@ const guestbook = {
   // add a single guestbood entry
   add(name, email, comment) {
     console.log('Sending', name, email, comment)
+    // Note api is the same name as the GET route above
     return $.ajax({
       type: 'PUT',
       url: `${apiUrl}/entries`,
